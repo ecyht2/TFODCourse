@@ -1,0 +1,3 @@
+[submodule "Tensorflow/workspace/images/collectedimages"]
+	path = Tensorflow/workspace/images/collectedimages
+	url = https://github.com/ecyht2/tf-shapes-dataset
