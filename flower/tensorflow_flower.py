@@ -10,7 +10,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 
 # https://stackoverflow.com/questions/37660312/how-to-run-tensorflow-on-cpu
-#os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 if tf.test.gpu_device_name():
     print('GPU found')
 else:

@@ -12,8 +12,8 @@ import os
 import time
 
 # Defining Variables
-labels = ['Triangle', 'Circle', 'Square']
-number_imgs = 5
+labels = ['Quadrilateral']
+number_imgs = 2
 IMAGES_PATH = os.path.join('Tensorflow', 'workspace', 'images', 'collectedimages')
 
 # Creating Directories
@@ -39,7 +39,7 @@ for label in labels:
     while True:
         ret, frame = cap.read()
         cv2.imshow('frame', frame)
-        #cTime = time.time()
+        cTime = time.time()
         if cTime > target_time:
             imgname = os.path.join(IMAGES_PATH,label,label+'.'+'{}.jpg'.format(str(uuid.uuid1())))
             print('Collecting image {}'.format(imgname))
